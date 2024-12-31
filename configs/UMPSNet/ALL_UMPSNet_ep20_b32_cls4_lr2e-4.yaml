@@ -1,0 +1,36 @@
+# Files
+data_root: './data/ALL'
+data_patch_feats: '/data/lishichao/data/zby/clam_ctrans_s20/pt_files/'
+
+data_genomic: './data/ALL/tcga_all_nan.csv'
+data_signature: './data/ALL/signatures.csv'
+data_status: './data/ALL/status_all.json'
+split_dir: './data/splits/tcga_all'
+split_start: 0   # default:0 start with the first fold
+split_end: 5    # default:5 end with the end fold
+
+# Dataset
+data_name: 'Survival'
+data_train_mode: 'train'
+data_test_mode: 'val'
+data_collect_mode: 'transformer_embed'
+
+# Model
+model_name: 'UMPSNet'
+model_pretrain: ''
+model_omic_sizes: [82, 328, 513, 443, 1536, 452]
+model_fusion: 'unimodule_guided'
+model_num_classes: 4
+model_loss: 'nllloss+celoss'
+model_loss_mode: 'multimodal+dataloss'
+experts_num: 10
+
+epoch_num: 20
+grad_cum: 32
+learning_rate: 0.0002
+weight_decay: 0.00001
+scheduler: 'cosine'
+
+# workspace
+workspace: ./workspace/ALL_UMPSNet_ep20_b32_cls4_lr2e-4
+results_val: results_val
