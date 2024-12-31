@@ -6,9 +6,9 @@ The official implement of the paper: [TBD]
 
 The contribution of the paper:
 
-- UMPSN
-- UMS
-- UMS
+- A unified multi-modal pan-cancer prognosis model named UMPSNet, where six types of complementary patient data, including images, genes and texts, are firstly encoded by three different modal encoders, respectively. 
+- To address the distributional differences among various cancer types, UMPSNet introduces the GMoE mechanism, which employs multiple experts to collaboratively accomplish the prognosis task.
+- To the best of our knowledge, UMPSNet is the first model designed for pan-cancer prognosis via a joint learning paradigm. Extensive experiments on five public datasets in TCGA, namely BLCA, BRCA, GBMLGG, LUAD and UCEC, demonstrate that UMPSNet outperforms all state-of-the-art pan-cancer prognosis methods, while achieves competitive performance with those for single-cancer. 
 
 ![](./images/framework.png)
 
