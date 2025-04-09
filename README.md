@@ -97,7 +97,7 @@ CUDA_VISIBLE_DEVICES=0 python run.py --test_pass --config <path_to_your_config>
 
 ## Clinical Demo
 
-The clinical implement demo is available at: www.mcprl.com/umpsnet/clinical_demo.
+The clinical implement demo is available at: [https://umpsnet.cpolar.top](https://umpsnet.cpolar.top).
 
 - The open-source clinical decision support system, featuring a user-friendly web interface for real-world prognostic assessment. The framework demonstrated flexible multi-modal analysis capabilities, accommodating both comprehensive evaluations (integrating histopathology, genomic data, and clinical text data) and resource-constrained scenarios (using only pathology images and clinical text data).
 
